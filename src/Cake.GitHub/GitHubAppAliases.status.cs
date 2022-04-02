@@ -90,7 +90,7 @@
 
                 return result;
             }
-            catch (Exception ex)
+            catch (Exception? ex)
             {
                 do context.Log.Error(ex.Message); while ((ex = ex.InnerException) != null);
 
